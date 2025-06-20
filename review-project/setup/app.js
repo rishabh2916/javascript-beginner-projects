@@ -77,3 +77,10 @@ preBtn.addEventListener('click', () => {
   }
   showPerson(currentItem);
 })
+
+//random card generator
+randomBtn.addEventListener('click', () => {
+  currentItem = Math.floor(Math.random()  * reviews.length);
+  console.log(currentItem);
+  showPerson();
+})
